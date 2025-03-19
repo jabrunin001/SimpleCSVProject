@@ -1,0 +1,14 @@
+2025-03-19 16:30:41,216 - etl_pipeline - INFO - ETL Pipeline initialized with source: sample_data.csv, target: processed_data.csv
+2025-03-19 16:30:41,217 - etl_pipeline - INFO - Starting ETL pipeline execution
+2025-03-19 16:30:41,217 - etl_pipeline - INFO - Extracting data from sample_data.csv
+2025-03-19 16:30:41,233 - etl_pipeline - INFO - Extracted 100 rows from source
+2025-03-19 16:30:41,233 - etl_pipeline - INFO - Starting data transformation
+2025-03-19 16:30:41,236 - etl_pipeline - INFO - Removed 10 rows with missing values
+2025-03-19 16:30:41,246 - etl_pipeline - INFO - Created new column 'combined_field' from name and email
+2025-03-19 16:30:41,247 - etl_pipeline - INFO - Transformation complete. 90 rows processed.
+2025-03-19 16:30:41,247 - etl_pipeline - INFO - Loading data to CSV: processed_data.csv
+2025-03-19 16:30:41,252 - etl_pipeline - INFO - Successfully loaded 90 rows to processed_data.csv
+2025-03-19 16:30:41,252 - etl_pipeline - INFO - Loading data to SQLite DB: etl_output.db, table: processed_data
+2025-03-19 16:30:41,274 - etl_pipeline - INFO - Successfully loaded 90 rows to DB table processed_data
+2025-03-19 16:30:41,275 - etl_pipeline - INFO - ETL pipeline completed successfully
+2025-03-19 16:30:41,275 - etl_pipeline - INFO - Pipeline metrics: {'rows_processed': 90, 'rows_filtered': 10, 'rows_with_errors': 0, 'start_time': '2025-03-19T16:30:41.217002', 'end_time': '2025-03-19T16:30:41.275015', 'execution_time_seconds': 0.058013}
